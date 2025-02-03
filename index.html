@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <style>
+  body{
+    background-color:black;
+    color:yellow;
+  }
+  div.scroll{
+    overflow:auto;
+    space-wrap:nowrap;
+    padding:10px;
+  }
+  div.scroll embed,table,tr,td{
+    padding:10px
+    border-collapse:collapse;
+  }
+  #img_size{
+    width:300px;
+    height:400px;
+  }
+  #row_font{
+    font-size:25px;
+  }
+  #search{
+    height:45px;
+    width:500px;
+    position:fixed;
+    left:200px;
+  }
+  </style>
+</head>
+<body>
+  <div id="bar">
+    <embed src="/logo/banner.png" style="height:140px;width:90%;position:absolute;top:-1px;left:90px;"></embed>
+    <button onclick="srbar();" style="position:absolute;top:10px;left:90%;font-size:50px;border-radius:50%;border:1px solid red;outline:2px solid gold;background-color:gold;color:gold;"><embed src="/logo/search.png" style="width:50px;height:50px;"></embed></button>
+  <div style="position:absolute;top:150px;left:300px;color:white;"><h1><u>MOVIES</u></h1></div><div style="position:absolute;top:150px;left:600px;color:yellow;"><h1><u>SERIES</u></h1></div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1><b>| PUNJABI</b></h1>
+  <div class="scroll"><table id="row_font"><tr><td>
+    <embed src="/punjabi/lekh.jpg" id="img_size"></embed></td>
+    <td> <embed src="/punjabi/mitran_da_naa_chalda.jpg" id="img_size"></embed></td>
+    <td><embed src="/punjabi/qismat.jpg" id="img_size"></embed></td>
+    <td><embed src="/punjabi/qismat2.jpg" id="img_size"></embed></td>
+   <td> <embed src="/punjabi/sufna.jpg" id="img_size"></embed></td>
+    <td><embed src="/punjabi/rocky_mental.jpg" id="img_size"></embed></td>
+  
+    <td><h1><b>SEE&nbsp;ALL></b></h1></td>
+  </tr>
+    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LEKH<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2023)</b></h1></td>
+    <td><h2><b>&nbsp;&nbsp;&nbsp;&nbsp;MITRAN&nbsp;DA<br>&nbsp;&nbsp;NAA&nbsp;CHALDA<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2023)</b></h2></td>
+    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QISMAT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2018)</b></h1></td>
+    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;QISMAT2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2021)</b></h1></td>
+    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUFNA<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2020)</b></h1></td>
+    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;ROCKY<br>&nbsp;&nbsp;&nbsp;&nbsp;MENTAL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2017)</b></h1></td>
+    
+   
+  </div></div>
+</body>
+  <script>
+  function srbar(){
+    document.getElementById("bar").innerHTML="<button onclick='location.reload()'>x</button><input id='search' onkeyup='search();' type='search' placeholder='search..'><br><br><div id='output'></div>";
+  }
+  function search(){
+    var input = document.getElementById("search").value;
+    if(input.toLowerCase() == "smarak"){
+    document.getElementById("output").innerHTML="hello";
+    }
+    }
+  </script>
+</html>
