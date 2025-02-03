@@ -18,8 +18,8 @@
     border-collapse:collapse;
   }
   #img_size{
-    width:200px;
-    height:300px;
+    width:150px;
+    height:250px;
   }
   #row_font{
     font-size:25px;
@@ -34,10 +34,10 @@
 </head>
 <body>
   <div id="bar">
-    <embed src="/movie/banner.png" style="height:140px;width:90%;position:absolute;top:-1px;left:90px;"></embed>
+    <embed src="/movie/banner.png" style="height:100px;width:;position:absolute;top:-10px;left:0px;"></embed>
     <button onclick="srbar();" style="position:absolute;top:10px;left:90%;font-size:50px;border-radius:50%;border:1px solid red;outline:2px solid gold;background-color:gold;color:gold;"><embed src="/movie/search.png" style="width:50px;height:50px;"></embed></button>
-  <div style="position:absolute;top:150px;left:300px;color:white;"><h1><u>MOVIES</u></h1></div><div style="position:absolute;top:150px;left:600px;color:yellow;"><h1><u>SERIES</u></h1></div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1><b>| PUNJABI</b></h1>
+  <div style="position:absolute;top:0px;left:200px;color:white;"><h1><u>MOVIES</u></h1></div><div style="position:absolute;top:0px;left:400px;color:yellow;"><h1><u>SERIES</u></h1></div>
+  <br><br><br><h1><b>| PUNJABI</b></h1>
   <div class="scroll"><table id="row_font"><tr><td>
     <embed src="/movie/lekh.jpg" id="img_size"></embed></td>
     <td> <embed src="/movie/mitran_da_naa_chalda.jpg" id="img_size"></embed></td>
@@ -46,14 +46,14 @@
    <td> <embed src="/movie/sufna.jpg" id="img_size"></embed></td>
     <td><embed src="/movie/rocky_mental.jpg" id="img_size"></embed></td>
   
-    <td><h1><b>SEE&nbsp;ALL></b></h1></td>
+    <td><h5><b>SEE&nbsp;ALL></b></h5></td>
   </tr>
-    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LEKH<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2023)</b></h1></td>
-    <td><h2><b>&nbsp;&nbsp;&nbsp;&nbsp;MITRAN&nbsp;DA<br>&nbsp;&nbsp;NAA&nbsp;CHALDA<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2023)</b></h2></td>
-    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QISMAT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2018)</b></h1></td>
-    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;QISMAT2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2021)</b></h1></td>
-    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUFNA<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2020)</b></h1></td>
-    <td><h1><b>&nbsp;&nbsp;&nbsp;&nbsp;ROCKY<br>&nbsp;&nbsp;&nbsp;&nbsp;MENTAL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2017)</b></h1></td>
+    <td><h5><b>&nbsp;&nbsp;&nbsp;LEKH<br>&nbsp;&nbsp;&nbsp;&nbsp;(2023)</b></h5></td>
+    <td><h5><b>&nbsp;&nbsp;&nbsp;&nbsp;MITRAN&nbsp;DA<br>&nbsp;&nbsp;NAA&nbsp;CHALDA<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2023)</b></h5></td>
+    <td><h5><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QISMAT<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2018)</b></h5></td>
+    <td><h5><b>&nbsp;&nbsp;&nbsp;&nbsp;QISMAT2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2021)</b></h5></td>
+    <td><h5><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUFNA<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2020)</b></h5></td>
+    <td><h5><b>&nbsp;&nbsp;&nbsp;&nbsp;ROCKY<br>&nbsp;&nbsp;&nbsp;&nbsp;MENTAL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2017)</b></h5></td>
     
    
   </div></div>
@@ -67,6 +67,6 @@
     if(input.toLowerCase() == "smarak"){
     document.getElementById("output").innerHTML="hello";
     }
-    }
+    location.reload();
   </script>
 </html>
